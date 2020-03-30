@@ -15,11 +15,11 @@ function search(event) {
       notUi();
     } else {
       var data = JSON.parse(nReq.response);
-      console.log(data, "data");
-      console.log(data.login, "your username");
-      console.log(data.id, "your id");
-      console.log(data.bio, "your bio");
-      console.log(data.avatar_url);
+      // console.log(data, "data");
+      // console.log(data.login, "your username");
+      // console.log(data.id, "your id");
+      // console.log(data.bio, "your bio");
+      // console.log(data.avatar_url);
       profileUi(data);
     }
   };

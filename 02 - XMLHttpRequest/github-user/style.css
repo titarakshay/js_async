@@ -64,6 +64,7 @@ span{
 form{
     margin-top: 8px;
     width: 800px;
+    display:flex;
 }
 .username{
     width: 650px;
