@@ -11,6 +11,8 @@ console.log("Hey You!");
 ```
 
  output
+ // Hey You
+ //Hey You Called Me after 1 sec delay
 
 2.
 ```js
@@ -23,6 +25,8 @@ setTimeout(sayHello, 0);
 console.log("Hey You!");
 ```
  output
+  // Hey You
+ //Hey You Called Me without delay
 
 3.
 ```js
@@ -36,6 +40,10 @@ function main() {
 main();
 ```
  output
+ // A
+ // C
+ // B
+
 
 4.
 ```js
@@ -57,9 +65,13 @@ function main() {
 
  output
 
+ // logs A
+ //after delay of 3 seconds C
+ // logs B
+
 5. Look at the output of the code below to understand hwo things are happening.
 
-```js
+
 function runWhileLoopForNSeconds(sec) {
   let start = Date.now(),
     now = start;
@@ -78,5 +90,8 @@ function main() {
 }
 
 main();
-
+// logs A 0 datenow- current is 0;
+// logs C  after 3 seconds delay
+// logs B after delay 1sec
+// three logs having different time
 ```
